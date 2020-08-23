@@ -8,12 +8,15 @@ def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
 
+def history(request):
+    return render(request, "history.html")
 
 def db(request):
 
-    greeting = Greeting()
-    greeting.save()
+  # greeting = Greeting()
+  #  greeting.save()
 
-    greetings = Greeting.objects.all()
+ #   greetings = Greeting.objects.all()
 
-    return render(request, "db.html", {"greetings": greetings})
+   # return render(request, "db.html", {"greetings": greetings})
+   return request(request, "sup")
