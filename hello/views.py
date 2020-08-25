@@ -11,6 +11,9 @@ def index(request):
 def history(request):
     return render(request, "history.html")
 
+def commands(request):
+    return render(request, "commands.html")
+
 def db(request):
 
   # greeting = Greeting()
